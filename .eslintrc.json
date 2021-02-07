@@ -1,0 +1,46 @@
+{
+  "extends": ["react-app", "prettier"],
+  "plugins": ["prettier"],
+  // "env": {
+  //   "browser": true,
+  //   "es6": true
+  // },
+  "rules": {
+    "prettier/prettier": ["error", {"endOfLine": "auto"}],
+    "@typescript-eslint/no-unused-vars": [
+      1,
+      {
+        "vars": "all",
+        "args": "none",
+        "ignoreRestSiblings": true,
+        "caughtErrors": "none"
+      }
+    ],
+    "jsx-quotes": [1, "prefer-single"],
+    "no-class-assign": "error",
+    "no-dupe-keys": "error",
+    "no-dupe-args": "error",
+    "no-duplicate-case": "error",
+    "no-fallthrough": "error",
+    "no-func-assign": "error",
+    // "linebreak-style": [0, "windows"],
+    "no-multi-spaces": "warn",
+    "no-var": "error",
+    "eqeqeq": [2, "allow-null"],
+    "quotes": [2, "single"],
+    "no-unreachable": "error",
+    "no-multiple-empty-lines": [2, {"max": 2}],
+    "camelcase": "warn",
+    "react/jsx-key": 2,
+    "react/jsx-max-props-per-line": 0,
+    "space-infix-ops": "error",
+    "array-callback-return": "error",
+    "arrow-parens": ["error", "as-needed"],
+    "arrow-body-style": 0,
+    // "indent": [2, 2, {"SwitchCase": 2}],
+    "prefer-template": "warn",
+    "default-case": 2,
+    "no-return-await": 2,
+    "object-curly-spacing": ["error", "always"]
+  }
+}
